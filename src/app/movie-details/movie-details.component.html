@@ -1,0 +1,141 @@
+<app-header></app-header>
+<div class="container">
+  <div class="schedule">
+    <div class="title">SCHEDULES</div>
+    <div class="days">
+      <div class="day active">16 Dec<br />THU</div>
+      <div class="day">17 Des<br />FRI</div>
+      <div class="day">18 Des<br />SAT</div>
+      <div class="day">19 Des<br />SUN</div>
+      <div class="day">20 Des<br />TUE</div>
+    </div>
+    <hr>
+    <div class="location">
+      <select id="dropdown">
+        <option value="option1">Jakarta</option>
+        <option value="option2">Bhopal</option>
+        <option value="option3">Delhi</option>
+        <option value="option3">Depok</option>
+        <option value="option3">Bogor</option>
+      </select>
+    </div>
+
+    <!-- <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Grand Indonesia" />
+      
+    </div> -->
+    <div class="options">
+      <div class="option">
+        <select class="option-select">
+        <option class="option-label">Studio:</option>
+        
+          <option value="goldClass2D">Gold Class 2D</option>
+          <option value="regular2D">Regular 2D</option>
+          <option value="regular2D">2D</option>
+        </select>
+      </div>
+      <div class="option">
+        <select class="option-select">
+        <option class="option-label">Sort:</option>
+        
+            <option value="goldClass2D">Nearest</option>
+            <option value="regular2D">Cheapest price</option>
+            <option value="regular2D">Alphabet</option>
+        </select>
+      </div>
+      <div class="option">
+        <select class="option-select">
+        <option class="option-label">Cinema:</option>
+       
+            <option value="goldClass2D">Nearest</option>
+            <option value="regular2D">Cheapest price</option>
+            <option value="regular2D">Alphabet</option>
+        </select>
+      </div>
+    </div>
+    <div>
+    <div class="cinema">
+      <span class="cinema-icon">⭐</span>
+      <span class="cinema-name">GRAND INDONESIA CGV</span>
+      <span class="cinema-location">Location: Jakarta</span>
+    </div>
+</div>
+    <div class="schedule-details">
+      <div class="schedule-title">REGULAR 2D</div>
+      <div class="schedule-times">
+        <div class="schedule-time">11:00</div>
+        <div class="schedule-time">13:45</div>
+        <div class="schedule-time">14:40</div>
+        <div class="schedule-time">15:40</div>
+      </div>
+      <div class="schedule-times">
+        <div class="schedule-time">17:15</div>
+        <div class="schedule-time">18:15</div>
+        <div class="schedule-time active">20:00</div>
+        <div class="schedule-time">21:00</div>
+      </div>
+      <div class="schedule-title">GOLD CLASS 2D</div>
+      <div class="schedule-times">
+        <div class="schedule-time">12:40</div>
+        <div class="schedule-time">15:40</div>
+        <div class="schedule-time active">18:35</div>
+        <div class="schedule-time">17:10</div>
+      </div>
+      <DIV>
+        <span class="schedule-title">⭐</span>
+        <span class="cinema-name">Plaza Indonesia XXI</span>
+        <div class="schedule-time">12:40</div>
+        <div class="schedule-time">15:40</div>
+      </DIV>
+    </div>
+  </div>
+  <div class="movie-details">
+    <!-- for getting the differnt image url -->
+    <img [src]="movie_data.url" alt="Movie Poster" class="movie-poster" />
+    <div class="movie-title">{{ movie_data.details.name }}</div>
+    <div class="movie-info">
+      <span class="movie-info-label">Genre:</span>
+      <span class="movie-info-value">Action</span>
+    </div>
+    <div class="movie-info">
+      <span class="movie-info-label">Duration:</span>
+      <span class="movie-info-value">{{ movie_data.details.duration }}</span>
+    </div>
+    <div class="movie-info">
+      <span class="movie-info-label">Director:</span>
+      <span class="movie-info-value">{{ movie_data.details.director }}</span>
+    </div>
+    <div class="movie-info">
+      <span class="movie-info-label">Age Rating:</span>
+      <span class="movie-info-value">{{ movie_data.details.tags }}</span>
+    </div>
+    <!-- <div class="book">
+      <div class="cinema">
+        <span class="cinema-name">GRAND INDONESIA CGV</span>
+        <span class="cinema-location">16 Desember 2024</span>
+      </div>
+      <div class="schedule-details">
+        <div class="schedule-title">REGULAR 2D</div>
+        <div class="schedule-times">
+          <div class="schedule-time active" (click)="handle()" >Book Now</div>
+        </div>
+      </div>
+    </div> -->
+    <div class="cinema-box-container">
+        <div class="cinema-box">
+          <div class="cinema-info">
+            <span class="cinema-name">GRAND INDONESIA CGV</span>
+            <span class="cinema-location">16 Desember 2024</span>
+          </div>
+          <div class="schedule-details">
+            <div class="schedule-title">REGULAR 2D</div>
+            <div class="schedule-times">
+              <div class="schedule-time active" (click)="handle()">Book Now</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</div>
+<app-footer></app-footer>

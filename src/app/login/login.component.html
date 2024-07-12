@@ -1,0 +1,15 @@
+<div class="main1">
+	<h1>Cinemania Delight</h1>
+	<div class="container">
+	  <h2>Log In</h2>
+	  <form class="first" (ngSubmit)="onSubmit()">
+		<label for="phone-number">Enter Phone Number:</label>
+		<input type="tel" id="phone-number" placeholder="+91 " required [(ngModel)]="phoneNumber" [ngModelOptions]="{standalone: true}">
+  
+		<label for="password">Password:</label>
+		<input type="password" id="password" placeholder="Enter your password" required [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+  
+		<button id="sign-in-btn" type="submit">Log In</button>
+	  </form>
+	</div>
+  </div>

@@ -1,0 +1,2 @@
+aws s3 sync . s3://dna-autodidact-production-bucket/repos/hu-sp-3ffa953cd-final-assignment-scaffolding_angular_issue_tracker-1718267850071/master/ --delete --exclude ./venv/\* --exclude ./env/\*
+echo Success

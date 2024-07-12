@@ -1,0 +1,121 @@
+<app-header></app-header>
+<div class="main1">
+  <p class="category">Now Showing</p>
+  <div class="dashboard">
+    <div class="movie-card" *ngFor="let movie of moviesDB">
+        
+      <img [src]="source[movie.id]" class="image-container" />
+      <div class="about">
+        <div class="name">{{ movie.name }}</div>
+        <div class="details">
+          <p>⭐{{ movie.rating }}/10</p>
+          <p>{{ movie.duration }} min</p>
+          <p>{{ movie.tags }}</p>
+        </div>
+      </div>
+
+      <div class="hovering">
+        <div class="hover-content">
+          <div class="titles">{{ movie.name }}</div>
+          <div class="buttons">
+            <button class="btn book"  (click)="onBook(movie,source[movie.id])">Book Now</button>
+            <button class="btn trailer">Watch Trailer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<p class="category">Spotlight</p>
+<div class="dashboard">
+  <div class="movie-card" *ngFor="let movie of moviesDB">
+    <img [src]="source[movie.id]" class="image-container" />
+    <div class="about">
+      <div class="name">{{ movie.name }}</div>
+      <div class="details">
+        <p>★{{ movie.rating }}/10</p>
+        <p>{{ movie.duration }} min</p>
+        <p>{{ movie.tags }}</p>
+      </div>
+    </div>
+
+    <div class="hovering">
+      <div class="hover-content">
+        <div class="titles">{{ movie.name }}</div>
+        <div class="buttons">
+          <button class="btn book">Book Now</button>
+          <button class="btn trailer">Watch Trailer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<p class="category">Coming Soon</p>
+<div class="dashboard">
+  <div class="movie-card" *ngFor="let movie of moviesDB">
+    <img [src]="source[movie.id]" class="image-container" />
+    <div class="about">
+      <div class="name">{{ movie.name }}</div>
+      <div class="details">
+        <p>★{{ movie.rating }}/10</p>
+        <p>{{ movie.duration }} min</p>
+        <p>{{ movie.tags }}</p>
+      </div>
+    </div>
+
+    <div class="hovering">
+      <div class="hover-content">
+        <div class="titles">{{ movie.name }}</div>
+        <div class="buttons">
+          <button class="btn book">Book Now</button>
+          <button class="btn trailer">Watch Trailer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<p class="category">Art & Indie</p>
+<div class="dashboard">
+  <div class="movie-card" *ngFor="let movie of moviesDB">
+    <img [src]="source[movie.id]" class="image-container" />
+    <div class="about">
+      <div class="name">{{ movie.name }}</div>
+      <div class="details">
+        <p>★{{ movie.rating }}/10</p>
+        <p>{{ movie.duration }} min</p>
+        <p>{{ movie.tags }}</p>
+      </div>
+    </div>
+
+    <div class="hovering">
+      <div class="hover-content">
+        <div class="titles">{{ movie.name }}</div>
+        <div class="buttons">
+          <button class="btn book">Book Now</button>
+          <button class="btn trailer">Watch Trailer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="card1">
+<div class="card">
+    <div>
+    <p style="font-size: xx larrge;">Book your movie from anywhere<p>
+    <p>Now, enjoy that experience on the go with the Cinema Delight App! It's the best way to view showtimes, buy tickets, 
+        watch trailers and find out about the latest movie events happening at Cinema Delight.</p>
+    <ul>
+        <li>Look up movies and showtimes and share them with friends and family.</li>
+        <li>See theatre amenities and view theatre location maps</li>
+        <li>Use easy-to-navigate icon indicators for movie features and amenities like 3D, IMAX, Audio Description (AD), Closed Caption (CC) and more</li>
+    </ul>
+    <div class="app-stores">
+       <a href="https://play.google.com/store/movies?hl=en_US">Google playstore</a>
+    </div>
+</div>
+    <img class="image" src="../../assets/images/mobile.jpg">
+  
+</div>
+</div>
+<app-footer></app-footer>

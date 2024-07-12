@@ -1,0 +1,185 @@
+*{
+    background-color:#282828;
+    color:white;
+}
+body {
+    background-color: #181818;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+  }
+  
+  .schedule {
+    width: 400px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .days {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .day {
+    background-color: #4a0909;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .day:hover{
+    background-color: #ff0000;
+  }
+  
+  .location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .location::backdrop:hover{
+    color: white;
+  }
+  
+  .location-icon {
+    margin-right: 10px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .search-input {
+    background-color: #292323;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-icon {
+    cursor: pointer;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+  }
+  
+  .option-label {
+    margin-right: 3px;
+  }
+  
+  .option-select {
+    background-color: #282828;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  .cinema {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cinema-icon {
+    margin-right: 5px;
+  }
+  
+  .cinema-name {
+    font-weight: bold;
+  }
+  
+  .cinema-location {
+    font-size: 12px;
+  }
+  
+  .schedule-details {
+   
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .schedule-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .schedule-times {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .schedule-time {
+   
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .schedule-time,times:hover {
+    background-color: #181717;
+  }
+  
+  
+
+  .movie-details {
+    width: 200px;
+  }
+  
+  .movie-poster {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .movie-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .movie-info {
+    margin-bottom: 10px;
+  }
+  
+  .movie-info-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .movie-info-value {
+    margin-right: 10px;
+  }
+  .book
+  {
+    background-color: #181818;
+  }

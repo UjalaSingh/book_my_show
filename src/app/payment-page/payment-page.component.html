@@ -1,0 +1,82 @@
+<app-header></app-header>
+
+  <div class="container">
+    <div class="card">
+      <h1>PAYMENT CONFIRMATION</h1>
+      <p>Confirm payment for the seats you ordered</p>
+      <div class="details">
+        <div class="schedule-details">
+          <div class="title">Schedule Details</div>
+          <div class="details-item">
+            <label>Movie title</label>
+            <span>{{ticketDetails.movieName | uppercase}}</span>
+          </div>
+          <div class="details-item">
+            <label>Date</label>
+            <span>THURSDAY, 17 DECEMBER 2021</span>
+          </div>
+          <div class="details-item">
+            <label>Class</label>
+            <span>REGULAR 2D</span>
+          </div>
+          <div class="details-item">
+            <label>Time</label>
+            <span>14:40</span>
+          </div>
+          <div class="details-item">
+            <label>Tickets (3)</label>
+            <div class="tickets">
+              <span>C8, C9, C10</span>
+            </div>
+            <div class="back">
+                <button (click)="handleBackClick()"  id="b1"> <-- Back</button>
+            </div>
+          </div>
+        </div>
+        <div class="order-summary">
+          <div class="title">Order Summary</div>
+          <div class="details-item">
+            <label>Transaction Details</label>
+            <div class="payment-details">
+              <span>REGULAR SEAT</span>
+              <span class="price">Rs. 50.000</span>
+              <span class="quantity">X3</span>
+            </div>
+            <div class="payment-details">
+              <span>SERVICE FEES</span>
+              <span class="price">Rs. 3.000</span>
+              <span class="quantity">X3</span>
+            </div>
+          </div>
+          <div class="details-item">
+            <label>Promo & Voucher</label>
+            <div class="payment-details">
+              <span>PROMO TIX ID</span>
+              <span class="price">- Rs. 70.000</span>
+            </div>
+          </div>
+          <div class="details-item total-pay">
+            <label>Total Pay</label>
+            <div class="payment-details">
+              <span class="price">Rs. 89.000</span>
+            </div>
+          </div>
+          <div class="details-item">
+            <label>Payment method</label>
+            <div class="payment-method">
+              <img src="https://i.ibb.co/0Y9QvF6/dana-logo.png" alt="DANA Logo">
+              <span>DANA</span>
+            </div>
+          </div>
+          <!-- <div class="details-item">
+            <a href="#" class="see-all">See All</a>
+            <span class="small-text">*Ticket purchases cannot be cancelled</span>
+          </div> -->
+          
+          <button class="button" (click)="handleBuyTicket()">BUY TICKETS</button>
+        </div>
+      </div>
+</div>
+</div>
+
+<app-footer></app-footer>
